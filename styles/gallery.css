@@ -1,0 +1,35 @@
+.image-gallery {
+  position: relative;
+  /* display: flex; */
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+.image-gallery--inner {
+
+}
+
+.image-item {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+   z-index: 1;
+   transition: opacity 0.5s, transform 0.5s, z-index 0.5s;
+}
+.image-item.active {
+    opacity: 1;
+    z-index: 100;
+}
+.image-item.previous {
+    transform: translateX(-100%);
+    z-index: 10;
+}
+.image-item.next {
+    transform: translateX(100%);
+    z-index: 10;
+}
+.image-item img {
+   width: 300px;
+   height: 300px;
+}

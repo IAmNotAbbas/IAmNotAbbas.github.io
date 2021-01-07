@@ -2,14 +2,71 @@
 
 <head>
     <title> Abbas Website </title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>
-        ABBAS ALAM
-    </h1>
-    <img src="./images/Myself.JPG">
+    <header>
+        <h1>Abbas Alam application</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a target="_blank" href="http://xxx.co.uk">Github repo</a></li>
+            <li><a target="_blank" href="http://xxx.co.uk">FreeCodeCamo</a></li>
+            <li><a target="_blank" href="http://xxx.co.uk">CodeWars</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>About me</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eius quas pariatur veritatis debitis molestias, itaque omnis exercitationem harum maiores provident totam reiciendis cum impedit ea autem magnam numquam ut!
+            </p>
+        </section>
+
+        <section>
+            <h1>Images that are relavent</h1>
+
+            <div class="image-gallery">
+                <div class="image-gallery--inner">
+                    <div class="image-item">
+                        <img src="./images/sunlight.JPG">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/salem.JPG">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/looney.JPG">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/itme.JPG">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/Myself.JPG">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <button class="image-previous-button">Previous</button>
+            <button class="image-next-button">Next</button>
+
+        </div>
+        
+
+
+    </main>
+
+    <footer>
+        <a href="mailto:abbas.asdasd@hotmail.co.uk">abbas.asdasd@hotmail.co.uk</a>
+    </footer>
+    
     <!-- scripts -->
     <script src="./init.js"></script>
 </body>
