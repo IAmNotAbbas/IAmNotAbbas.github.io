@@ -1,9 +1,5 @@
-.image-gallery {
-
-}
 .image-gallery--inner {
     position: relative;
-    /* display: flex; */
     margin: 10px;
     width: 225px;
     height: 400px;
@@ -39,9 +35,7 @@ display: flex;
 padding: 0px 10px;
 
 }
-.image-control-item {
 
-}
 .image-control-item.slide-number {
    flex: 1;
    text-align: center;
