@@ -6,15 +6,75 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 12px;
-    background: red;
+    background: #181819;
+    padding: 12px 0px;
+}
+header > div {
+  width: 80%;
+  /* padding: 0px 12px; */
+  margin: 0 auto;
 }
 header h1 {
-    font-size: 36px;
+    font-size: 24px;
+    color: white;
 }
 
 h1 {
     font-size: 18px;
-    color: #999999;
+    font-weight: 400;
+    color: black;
+}
+p {
+  font-size: 12px;
+  color: #999999;
+}
+a { 
+    font-family:monospace;
+    font-size:16px;
+    color: #0d457c;
+    text-decoration: none;
+}
+a:hover {
+  font-size: 18px;
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding-left: 20;
+}
+li {
+  padding-bottom: 6px;
+}
+
+.container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+}
+.container nav {
+  width: 200px;
+  background: #eee;
+  padding-right: 20px;
+}
+/* .navigation-item {
+  display: inline-block;
+} */
+.container main {
+  padding: 0px 20px;
+}
+section {
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 80%;
+  background: yellow;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }

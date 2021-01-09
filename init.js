@@ -2,6 +2,7 @@ function initGallery() {
     var slideNumber = 0; // This will hold the current active slide in the gallery
     var imageItemClass = 'image-item';
     var items = document.getElementsByClassName(imageItemClass);
+    var slideNumberText = document.getElementsByClassName('slide-number')[0];
     var numItems = items.length;
     var animating = false; // Will hold if we are currently transitioning slides
 
@@ -23,6 +24,10 @@ function initGallery() {
             return slideNumber + numItems
         }
         return slideNumber
+    }
+
+    function updateSlideText(newSlideNumber) {
+        slideNumberText.innerHTML = "Slide "+ (newSlideNumber + 1) + "/" + items.length;
     }
 
     function moveToSlide(newSlideNumber) {
@@ -52,6 +57,8 @@ function initGallery() {
                 item.className = defaultClass;
             }
         });
+
+        updateSlideText(newSlideNumber);
 
         setTimeout(() => {
             animating = false

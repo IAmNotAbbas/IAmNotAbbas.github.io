@@ -1,12 +1,12 @@
 .image-gallery {
-  position: relative;
-  /* display: flex; */
-  margin: 10px;
-  width: 300px;
-  height: 300px;
+
 }
 .image-gallery--inner {
-
+    position: relative;
+    /* display: flex; */
+    margin: 10px;
+    width: 225px;
+    height: 400px;
 }
 
 .image-item {
@@ -30,6 +30,19 @@
     z-index: 10;
 }
 .image-item img {
-   width: 300px;
-   height: 300px;
+   width: 225px;
+   height: 400px;
+}
+
+.image-gallery--controls {
+display: flex;
+padding: 0px 10px;
+
+}
+.image-control-item {
+
+}
+.image-control-item.slide-number {
+   flex: 1;
+   text-align: center;
 }
